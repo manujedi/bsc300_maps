@@ -21,11 +21,13 @@ jobs:
           sudo apt update 
           sudo apt install wget openjdk-21-jre 
           wget https://download.geofabrik.de/europe/austria-latest.osm.pbf -O austria.pbf
-          export datestring="$(printf '%(%d%m%y)T\n' -1)"
-          sh generate_map.sh -i austria.pbf -o AT0000${datestring}3BR26204W02L 
+          export datestring="$(printf '%(%y%m%d)T\n' -1)"
+          export mapname=AT0000${datestring}3BR26204W02L
+          echo "Creating map ${mapname}.map"
+          sh generate_map.sh -i austria.pbf -o ${mapname} 
 
       - name: 'Upload Artifact'
         uses: actions/upload-artifact@v4
         with:
           name: austria
-          path: ./*.map
+          path: ./AT*.map
