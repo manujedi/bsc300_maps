@@ -1,0 +1,14 @@
+{
+	"build": {
+		"dockerfile": "Dockerfile"
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack"
+			]
+		}
+	},
+	"postCreateCommand": "git submodule update --init --recursive --depth=1"
+
+}
