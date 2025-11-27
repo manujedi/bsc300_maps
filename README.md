@@ -144,3 +144,41 @@ The **4-digit map version number** in the filename actually represents a region 
 |Uzbekistan 🇺🇿 | UZ000025033144F28M0BM086.map|
 |Venezuela 🇻🇪 | VE00002503171VE2VQ08M0AE.map|
 |Vietnam 🇻🇳 | VN00002503174Y22QK0800A7.map|
+
+
+# additional suspicions by me about the filename
+
+Looking at Austria https://en.wikipedia.org/wiki/States_of_Austria
+
+Map names are the following
+E.g. Vienna: AT09002303103G026S009007
+
+The following list is sorted by most northern point which matches the numbers
+
+| State Name | Country | state  | date  | 3chars base36 westernmost point | 3chars base36 northernmost point | 3chars base36 west east size |  3chars base36 north south size |
+|---|---|---|---|---|---|---|---|
+|Lower Austria          |AT| 0300| 230310| 3EW -> 4424| 263 -> 2811| 01O -> 60| 01K -> 56|  
+|Upper Austria          |AT| 0400| 230310| 3DT -> 4385| 26C -> 2820| 01G -> 52| 01A -> 46|  
+|Vienna                 |AT| 0900| 230310| 3G0 -> 4464| 26S -> 2836| 009 -> 09| 007 -> 07|  
+|Burgenland             |AT| 0100| 230310| 3FV -> 4459| 26Y -> 2842| 00R -> 27| 019 -> 45|  
+|Salzburg               |AT| 0500| 230310| 3DE -> 4370| 271 -> 2845| 018 -> 44| 012 -> 38|  
+|Styria                 |AT| 0600| 230310| 3EC -> 4404| 278 -> 2852| 01O -> 60| 016 -> 42|  
+|Tyrol                  |AT| 0700| 230310| 3C5 -> 4325| 27B -> 2855| 01U -> 66| 012 -> 38|  
+|Vorarlberg             |AT| 0800| 230310| 3BS -> 4312| 27H -> 2861| 00H -> 17| 00P -> 25|  
+|Carinthia              |AT| 0200| 230310| 3DR -> 4383| 27W -> 2876| 01K -> 56| 00Q -> 26|  
+
+This is sorted by westernmost point, which also matches:
+
+| State Name | Country | state  | date  | 3chars base36 westernmost point | 3chars base36 northernmost point | 3chars base36 west east size |  3chars base36 north south size |
+|---|---|---|---|---|---|---|---|
+|Vorarlberg             |AT| 0800| 230310| 3BS -> 4312| 27H -> 2861| 00H -> 17| 00P -> 25|  
+|Tyrol                  |AT| 0700| 230310| 3C5 -> 4325| 27B -> 2855| 01U -> 66| 012 -> 38|  
+|Salzburg               |AT| 0500| 230310| 3DE -> 4370| 271 -> 2845| 018 -> 44| 012 -> 38|  
+|Carinthia              |AT| 0200| 230310| 3DR -> 4383| 27W -> 2876| 01K -> 56| 00Q -> 26|  
+|Upper Austria          |AT| 0400| 230310| 3DT -> 4385| 26C -> 2820| 01G -> 52| 01A -> 46|  
+|Styria                 |AT| 0600| 230310| 3EC -> 4404| 278 -> 2852| 01O -> 60| 016 -> 42|  
+|Lower Austria          |AT| 0300| 230310| 3EW -> 4424| 263 -> 2811| 01O -> 60| 01K -> 56|  
+|Burgenland             |AT| 0100| 230310| 3FV -> 4459| 26Y -> 2842| 00R -> 27| 019 -> 45|  
+|Vienna                 |AT| 0900| 230310| 3G0 -> 4464| 26S -> 2836| 009 -> 09| 007 -> 07|  
+
+no idea what the scaling is, does not correspond to any coordinate system that i know
