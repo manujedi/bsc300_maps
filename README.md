@@ -182,3 +182,13 @@ This is sorted by westernmost point, which also matches:
 |Vienna                 |AT| 0900| 230310| 3G0 -> 4464| 26S -> 2836| 009 -> 09| 007 -> 07|  
 
 no idea what the scaling is, does not correspond to any coordinate system that i know
+
+# some graphs about the data:
+
+https://manujedi.github.io/bsc300_maps/f1-maxLon.html
+
+https://manujedi.github.io/bsc300_maps/f2-maxLat.html
+
+https://manujedi.github.io/bsc300_maps/f3-angleDiffLongitude.html
+
+https://manujedi.github.io/bsc300_maps/f4-angleDiffLatgitude.html
